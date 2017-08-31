@@ -9,13 +9,25 @@
             pageInfo: {
                 pageID: 'this_page_name',
                 productTitle: 'Jyothi Test'
-                // . . .
             }
         }
     };	
 </script>
 <script type="text/javascript"> window._analytics = { "segment_key" : "Yxia4oJeorOjA5eUWTl8kpVLzqPmqLJA", "coremetrics" : false, "optimizely" : false, "googleAddServices": false, "addRoll" : false, "fullStory" : false}; </script>
 <script src="https://console.bluemix.net/analytics/build/bluemix-analytics.min.js"></script>
+
+<script>
+window.bluemixAnalytics.trackEvent('Created Object',{
+    productTitle: digitalData.page.pageInfo.productTitle,
+    category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
+    object: 'database',
+    objectType: 'example',
+    successFlag: 'true',
+    resultValue: 'test event sent',
+    customName1: 'color',
+    customValue1: 'blue'
+});
+</script>
 </head>
 <body>
 
