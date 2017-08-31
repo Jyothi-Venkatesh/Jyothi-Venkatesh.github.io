@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+    digitalData = {
+        page: {
+            category: {
+                primaryCategory: "Growth_Engine_Test (Growth_Engine_Test)"
+            },
+            },
+            pageInfo: {
+                pageID: 'Jyothi_id',
+                productTitle: 'Growth_Engine_Test'
+            }
+        }
+    };
+</script>
+<script type="text/javascript"> window._analytics = { "segment_key" : "DEV-TEST-SEGMENT-WRITE-KEY", "coremetrics" : false, "optimizely" : false, "googleAddServices": false, "addRoll" : false, "fullStory" : false}; </script>
+<script src="https://console.bluemix.net/analytics/build/bluemix-analytics.min.js"></script>
+<script>
+window.bluemixAnalytics.trackEvent('Created Object',{
+    productTitle: digitalData.page.pageInfo.productTitle,
+    category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
+    object: 'database',
+    objectType: 'example',
+    successFlag: 'true',
+    resultValue: 'test event sent',
+    customName1: 'color',
+    customValue1: 'blue'
+});
+</script>
+
+</head>
+<body>
+
+Welcome to Growth Engine!!
+
+</body>
+</html>
