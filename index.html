@@ -2,9 +2,7 @@
 <html>
 
 <head>
-  <meta name="IBM.WTMCategory" scheme="IBM_WTMCategory" content="IBMBLUEMIX WEBSITE">
-<meta name="IBM.WTMSite" content="BLUEMIX">
-
+  
 <!-- Idenify the page name for use with segment & coremetrics -->
 <script type="text/javascript">digitalData = {page: {pageInfo: {pageID: "Jyothi Page"}}}</script>
 <!-- Analytics loader script -->
@@ -12,6 +10,15 @@
 <script type="text/javascript"> window._analytics = { "segment_key" : "ckTyC0LntWHGHZE9ljI3Dy4LLZDx2TLB", "coremetrics" : false, "optimizely" : false, "googleAddServices": false, "addRoll" : false, "fullStory" : false}; </script>
 
 	
+	 <script>	
+	window.bluemixAnalytics.trackEvent('Created Object',{
+	    productTitle: digitalData.page.pageInfo.productTitle,
+	    category: 'Testing ('+digitalData.page.pageInfo.productTitle+')',
+	    object: 'database',
+	    objectType: 'example',
+	    successFlag: 'true'
+	});
+	</script>
  </head>
  <body>
 
